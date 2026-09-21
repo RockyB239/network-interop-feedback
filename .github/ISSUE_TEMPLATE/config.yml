@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Submission guidelines
-    url: https://github.com/RockyB239/network-interop-feedback#submission-guidelines
-    about: Read what evidence and context to include before submitting.
+  - name: Methodology
+    url: https://network-interop-graph.localprofilekits.workers.dev/methodology
+    about: Read how support state, operational state, and confidence are derived before submitting.
