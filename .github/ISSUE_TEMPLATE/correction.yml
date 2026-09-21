@@ -1,0 +1,92 @@
+name: Correction / conflicting evidence
+description: Report a result that looks wrong, or evidence that contradicts what's shown on the graph.
+title: "[correction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping correct the graph. Read the [submission guidelines](https://github.com/RockyB239/network-interop-feedback#submission-guidelines) first.
+
+        Issues in this repository are public. Do not paste proprietary, confidential, customer-private, credential, or otherwise sensitive material. Submissions are reviewed before changing the graph.
+  - type: input
+    id: page-url
+    attributes:
+      label: URL of the page with the issue
+      placeholder: Paste the exact graph page URL
+    validations:
+      required: true
+  - type: input
+    id: endpoint-a
+    attributes:
+      label: Exact Device A (model/SKU)
+    validations:
+      required: true
+  - type: input
+    id: port-a
+    attributes:
+      label: Port(s) used on Device A
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Exact component SKU(s) (DAC/AOC/optic)
+    validations:
+      required: true
+  - type: input
+    id: endpoint-b
+    attributes:
+      label: Exact Device B (model/SKU), if applicable
+    validations:
+      required: false
+  - type: input
+    id: port-b
+    attributes:
+      label: Port(s) used on Device B, if applicable
+    validations:
+      required: false
+  - type: input
+    id: speed
+    attributes:
+      label: Operating speed
+    validations:
+      required: true
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Firmware / driver / OS / configuration (if known)
+      description: Include any material settings, revisions, or peer-device context.
+    validations:
+      required: false
+  - type: dropdown
+    id: result
+    attributes:
+      label: Evidence / result being reported
+      options:
+        - Worked
+        - Worked with a specific configuration
+        - Failed
+        - Manufacturer states supported
+        - Manufacturer states unsupported / restricted
+    validations:
+      required: true
+  - type: input
+    id: evidence-url
+    attributes:
+      label: Evidence / source URL
+      placeholder: Link to the manufacturer page, forum post, test report, or other primary evidence
+    validations:
+      required: true
+  - type: textarea
+    id: what-is-wrong
+    attributes:
+      label: What's wrong with the current result, specifically?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I am reporting this accurately and have not pasted proprietary, confidential, customer-private, credential, or otherwise sensitive material.
+          required: true
