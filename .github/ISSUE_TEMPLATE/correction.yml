@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping correct the graph. Read the [submission guidelines](https://github.com/RockyB239/network-interop-feedback#submission-guidelines) first.
+        Thanks for helping correct the graph. Read the [methodology](https://network-interop-graph.localprofilekits.workers.dev/methodology) first.
 
         Issues in this repository are public. Do not paste proprietary, confidential, customer-private, credential, or otherwise sensitive material. Submissions are reviewed before changing the graph.
   - type: input
