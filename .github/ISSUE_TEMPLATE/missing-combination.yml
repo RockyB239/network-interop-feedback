@@ -1,0 +1,92 @@
+name: Missing combination / new evidence
+description: Report a device, cable/optic, or relationship with direct evidence that isn't on the graph yet.
+title: "[missing-combination] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing evidence. Read the [submission guidelines](https://github.com/RockyB239/network-interop-feedback#submission-guidelines) first.
+
+        Issues in this repository are public. Do not paste proprietary, confidential, customer-private, credential, or otherwise sensitive material. Submissions are reviewed before entering the graph.
+  - type: input
+    id: endpoint-a
+    attributes:
+      label: Exact Device A (model/SKU)
+      placeholder: e.g. MikroTik CRS309-1G-8S+IN
+    validations:
+      required: true
+  - type: input
+    id: port-a
+    attributes:
+      label: Port(s) used on Device A
+      placeholder: e.g. SFP+ port 3
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Exact component SKU(s) (DAC/AOC/optic)
+      placeholder: e.g. Cisco SFP-H10GB-CU3M
+    validations:
+      required: true
+  - type: input
+    id: endpoint-b
+    attributes:
+      label: Exact Device B (model/SKU), if applicable
+      placeholder: Leave blank for an endpoint/component-only report
+    validations:
+      required: false
+  - type: input
+    id: port-b
+    attributes:
+      label: Port(s) used on Device B, if applicable
+      placeholder: Leave blank if Device B is not part of the report
+    validations:
+      required: false
+  - type: input
+    id: speed
+    attributes:
+      label: Operating speed
+      placeholder: e.g. 10GbE
+    validations:
+      required: true
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Firmware / driver / OS / configuration (if known)
+      placeholder: e.g. firmware version, driver version, OS, auto-negotiation setting
+    validations:
+      required: false
+  - type: dropdown
+    id: result
+    attributes:
+      label: Evidence / result being reported
+      options:
+        - Worked
+        - Worked with a specific configuration
+        - Failed
+        - Manufacturer states supported
+        - Manufacturer states unsupported / restricted
+    validations:
+      required: true
+  - type: input
+    id: evidence-url
+    attributes:
+      label: Evidence / source URL
+      placeholder: Link to the manufacturer page, forum post, test report, or other primary evidence
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Include test method, peer device, component revision, or other context that may affect applicability.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I am reporting this accurately and have not pasted proprietary, confidential, customer-private, credential, or otherwise sensitive material.
+          required: true
