@@ -2,6 +2,10 @@
 
 Public evidence submissions and corrections for the **Network Interoperability Graph**.
 
+**Live graph:** https://network-interop-graph.localprofilekits.workers.dev/
+
+**Methodology:** https://network-interop-graph.localprofilekits.workers.dev/methodology
+
 This repository is intentionally small. It is the public evidence inbox only; the production code and evidence dataset live elsewhere and are not published here.
 
 ## Submission guidelines
@@ -15,6 +19,4 @@ Please provide exact model/SKU information wherever possible, including the devi
 
 **Do not post proprietary, confidential, customer-private, credential, or otherwise sensitive material.** Issues in this repository are public.
 
-A submitted issue is not automatically accepted as evidence. Submissions are reviewed against the Network Interoperability Graph methodology before they enter the graph.
-
-The public graph and methodology link will be added here at launch.
+A submitted issue is not automatically accepted as evidence. Submissions are reviewed against the [Network Interoperability Graph methodology](https://network-interop-graph.localprofilekits.workers.dev/methodology) before they enter the graph.
